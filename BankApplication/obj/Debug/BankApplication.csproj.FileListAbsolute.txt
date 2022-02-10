@@ -1,0 +1,7 @@
+C:\Users\sekla\Source\Repos\cis297-w2022-assignment3-template-Aseklawi\BankApplication\bin\Debug\BankApplication.exe.config
+C:\Users\sekla\Source\Repos\cis297-w2022-assignment3-template-Aseklawi\BankApplication\bin\Debug\BankApplication.exe
+C:\Users\sekla\Source\Repos\cis297-w2022-assignment3-template-Aseklawi\BankApplication\bin\Debug\BankApplication.pdb
+C:\Users\sekla\Source\Repos\cis297-w2022-assignment3-template-Aseklawi\BankApplication\obj\Debug\BankApplication.csproj.AssemblyReference.cache
+C:\Users\sekla\Source\Repos\cis297-w2022-assignment3-template-Aseklawi\BankApplication\obj\Debug\BankApplication.csproj.CoreCompileInputs.cache
+C:\Users\sekla\Source\Repos\cis297-w2022-assignment3-template-Aseklawi\BankApplication\obj\Debug\BankApplication.exe
+C:\Users\sekla\Source\Repos\cis297-w2022-assignment3-template-Aseklawi\BankApplication\obj\Debug\BankApplication.pdb
