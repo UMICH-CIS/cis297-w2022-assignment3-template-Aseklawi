@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public class Account
 {
-    private decimal balance; // private member balance
+    private decimal balance; 
 
     public Account(decimal balance) // constructor to set balance
     {
@@ -15,31 +15,31 @@ public class Account
 
     public virtual bool Debit(decimal amt)
     {
-        if (amt <= balance) // if amount is lesser than the balance
+        if (amt <= balance) // if balnce is more than ammount
         {
             balance = balance - amt;
-            return true; // widthraw sucessful
+            return true; // widthraw
         }
         else
         {
-            Console.WriteLine("Debit amount exceeded account balance"); // throwing message
+            Console.WriteLine("Debit amount exceeded account balance");
             return false;
         }
     }
 
-    public virtual void Credit(decimal amt) // add amount to the current balance
+    public virtual void Credit(decimal amt) // add to balance
     {
         balance = amt + balance;
     }
 
 
 
-    public decimal Balance // get and set of balance
+    public decimal Balance 
     {
         get { return balance; }
         set
         {
-            if (value >= 0.0M) // appllying condition that it should be greater than 0.0
+            if (value >= 0.0M) // should be bigger than 0
             {
                 balance = value;
             }
@@ -55,39 +55,39 @@ public class Account
 }
 
 
-public class SavingsAccount : Account //derived class SavingsAccount from Base class Account
+public class SavingsAccount : Account 
 
 {
-    private decimal interestRate; //private instance interestRate
+    private decimal interestRate; //private instance 
 
-    public SavingsAccount(decimal balance, decimal interestRate) : base(balance) //constructor of SavingsAccount with addition to the value for the base class Account
+    public SavingsAccount(decimal balance, decimal interestRate) : base(balance) //constructor of SavingsAccount
     {
         this.interestRate = interestRate;
     }
 
-    public decimal CalculateInterest() // function to calculate the interestRate
+    public decimal CalculateInterest() // calculate the interestRate
 
     {
-        return Balance * interestRate / 100m; //Balance is the getter setter value of the private instance balance of Account class
+        return Balance * interestRate / 100m; //Balance is bigger than intrestRate
     }
 }
 
-public class CheckingAccount : Account //derived class CheckingAccount from base class
+public class CheckingAccount : Account 
 {
-    private decimal fee; // private member fee of CheckingAccount class
+    private decimal fee; // intrest Fee
 
-    public CheckingAccount(decimal balance, decimal fee) : base(balance) // constructor which sets inital value of fee and the base class value balance.
+    public CheckingAccount(decimal balance, decimal fee) : base(balance) // constructor
     {
         this.fee = fee;
     }
 
-    public override void Credit(decimal amount) //overriding the function Credit for the derived class fee
+    public override void Credit(decimal amount) //overriding the function 
     {
-        base.Credit(amount); // call base class credit function
+        base.Credit(amount); 
         Balance = Balance - fee;
     }
 
-    public override bool Debit(decimal amount) //overriding the function Debit for the derived class fee
+    public override bool Debit(decimal amount) //overriding the function 
     {
         if (base.Debit(amount))
         {
